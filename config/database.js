@@ -9,7 +9,7 @@ const production = {
   dialect: "postgres",
   protocol: "postgres",
   dialectOptions: {
-    ssl: true,
+    ssl: { rejectUnauthorized: false },
   },
 };
 
